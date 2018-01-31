@@ -10,7 +10,7 @@ import config
 
 bot = telegram.Bot(token=config.TOKEN)
 
-updater = Updater(config.TOKEN)
+updater = Updater(config.TOKEN, workers=32)
 
 dispatcher = updater.dispatcher
 
